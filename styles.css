@@ -36,7 +36,8 @@ body {
   font-family: 'Inter', sans-serif;
   background: var(--bg);
   color: var(--text);
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   transition: background 0.5s ease, color 0.5s ease;
 }
 
@@ -88,6 +89,8 @@ body::after {
   display: grid;
   grid-template-columns: 320px minmax(0, 1fr);
   min-height: 100vh;
+  height:auto;
+  overflow-y: auto;
   padding: 1.4rem;
   gap: 1.2rem;
 }
